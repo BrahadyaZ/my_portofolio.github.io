@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Portofolio</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skill">Skill</a></li>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Portofolio</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+         
+        </div>
+        <div class="menu-links">
+          <li><a href="#profile" onclick="toggleMenu()">Profile</a></li>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skill" onclick="toggleMenu()">Skill</a></li>
+          <li><a href="#project" onclick="toggleMenu()">Project</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <!-- profile -->
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="assets/mypic.png" alt="brahadya logo" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, Guys!</p>
+        <h1 class="title">Brahadya Praja</h1>
+        <p class="section__text__p2">Personal Website</p>
+        <div class="btn-container">
+          <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
+        </div>
+        <div id="socials-container">
+          <img src="./assets/instagram.png" alt="My instagram profile" class="icon" onclick="location.href='www.instagram.com/brahadya.___'" />
+          <img src="./assets/Whatsapp.png" alt="My whatsapp profile" class="icon" onclick="location.href='https://wa.me/085944288749'" />
+        </div>
+      </div>
+    </section>
+
+    <!-- about -->
+    <section id="about">
+      <p class="section__text__p1">Ini adalah data diri saya</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="./assets/my.png" alt="Profile picture" class="about-pic" />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+              <h3>Pengalaman</h3>
+              <p>desain logo dan bendera<br /> membuat game dengan mit app inventor</p>
+            </div>
+            <div class="details-container">
+              <img src="./assets/education.png" alt="Education icon" class="icon" />
+              <h3>Pendidikan</h3>
+              <p>SD No 3 Abiansemal<br />SMPN 5 Abiansemal</p>
+              <p>SMKN 1 Denpasar<br /></p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Halo, perkenalkan, saya adalah Brahadya. Saya memiliki latar belakang dalam ilmu 
+              komputer dan saya bersekolah di SMK N 1 Denapasar. Saat ini, saya sebagai seorang 
+              siswa di jurusan rekayasa perangkat lunak, di mana saya bertanggung jawab untuk 
+              merancang dan mengembangkan solusi teknologi yang canggih. Saya juga sangat antusias 
+              tentang pembelajaran mesin dan kecerdasan buatan, dan saya berharap dapat terus berkontribusi dalam bidang ini.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- skill -->
+<section id="skill">
+  <p class="section__text__p1">Ini adalah kemampuan saya saat ini saya</p>
+  <h1 class="title">Skill</h1>
+  <div class="experience-details-container">
+    <div class="about-containers">
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/html.png" alt="Skill 1" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">HTML</h2>
+      </div>
+
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/css.png" alt="skill 2" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">CSS</h2>
+      </div>
+
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/fivem.png" alt="skill 3" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">Moding Five M</h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- project -->
+<section id="project">
+  <p class="section__text__p1">Ini adalah project yang pernah saya buat</p>
+  <h1 class="title">Project</h1>
+  <div class="experience-details-container">
+    <div class="about-containers">
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/rpl esport.png" alt="Skill 1" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">Pembuatan Logo RPL Esport</h2>
+      </div>
+
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/foerda.png" alt="skill 2" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">Pembuatan desain bendera FOERDA</h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- contact -->
+<section id="contact">
+  <p class="section__text__p1">hubungi saya melalui kontak ini</p>
+  <h1 class="title">Contact Me</h1>
+  <div class="contact-info-upper-container">
+    <div class="contact-info-container">
+      <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+      <p><a href="mailto:brahadyapraja7@gmail.com">brahadyapraja7@gmail.com</a></p>
+    </div>
+    <div class="contact-info-container">
+      <img src="./assets/Whatsapp.png" alt="LinkedIn icon" class="icon contact-icon" />
+      <p><a href="https://wa.me/08594428849">WhatsApp</a></p>
+    </div>
+  </div>
+</section>
+
+    <!-- footer -->
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skill">Skill</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Brahadyapraja.</p>
+    </footer>
+  </body>
+</html>
